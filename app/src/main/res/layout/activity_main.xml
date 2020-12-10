@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313435"
+    android:backgroundTint="#C38E8E"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:background="#00FFFFFF"
+            android:onClick="onClick"
+            android:text="☰"
+            android:textSize="100px" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="8sp"
+            android:text="City"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/clowds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Clowds" />
+
+        <TextView
+            android:id="@+id/curTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="-4"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/maxMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Max:,Min:" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="107dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:id="@+id/horScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TableRow
+                        android:id="@+id/first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TableRow
+                        android:id="@+id/second"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TableRow
+                        android:id="@+id/third"
+                        android:layout_width="1370dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1" />
+                </TableLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/data1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/img1"
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:text="⛅️"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/dayTemp1"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:text="day"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/nightTemp1"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:text="night"
+                    android:textSize="25sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/data2"
+                    android:layout_width="164dp"
+                    android:layout_height="match_parent"
+                    android:text="date"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚡️️"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/dayTemp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="day"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/nightTemp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="night"
+                    android:textSize="25sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/data3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    tools:text="☀️" />
+
+                <TextView
+                    android:id="@+id/dayTemp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="day"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/nightTemp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="night"
+                    android:textSize="25sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/data4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="❄️️"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/dayTemp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="day"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/nightTemp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="night"
+                    android:textSize="25sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/data5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="☁️️"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/dayTemp5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="day"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/nightTemp5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="night"
+                    android:textSize="25sp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

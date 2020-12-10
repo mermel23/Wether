@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MyLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313435"
+    android:backgroundTint="#C38E8E"
+    android:orientation="vertical"
+    tools:context="nure.Weather.CitySelection">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-107dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/CityList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/Kharkiv"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="278dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00000000"
+                        android:text="Kharkiv"
+                        android:textAlignment="viewStart"
+                        android:textColor="#453E3E"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/TempKharkiv"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="90px" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/Kiev"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="278dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00AA9595"
+                        android:text="Kiev"
+                        android:textAlignment="viewStart"
+                        android:textColor="#453E3E"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/TempKiev"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="90px" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/London"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="278dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00AA9595"
+                        android:text="London"
+                        android:textAlignment="viewStart"
+                        android:textColor="#453E3E"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/TempLondon"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="90px" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/Paris"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="278dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00AA9595"
+                        android:text="Paris"
+                        android:textAlignment="viewStart"
+                        android:textColor="#453E3E"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/TempParis"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="90px" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/Tokyo"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="278dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#00AA9595"
+                        android:text="Tokyo"
+                        android:textAlignment="viewStart"
+                        android:textColor="#453E3E"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/TempTokyo"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="90px" />
+                </TableRow>
+
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30px">
+
+                <EditText
+                    android:id="@+id/CityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/button8"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="127dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:backgroundTint="#00B8B3B3"
+                    android:onClick="find"
+                    android:text="🔍"
+                    android:textSize="60px" />
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
